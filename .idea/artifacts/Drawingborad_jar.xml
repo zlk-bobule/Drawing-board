@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact name="Drawingborad:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Drawingborad_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Drawingborad.jar">
+        <element id="module-output" name="Drawingborad" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.49" />
+        <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.4" />
+        <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.4" />
+        <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.4" />
+        <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.10" />
+        <element id="library" level="project" name="opencv-342" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="531.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zlk.viewcontroller.DrawPaneController">
+   <children>
+      <StackPane layoutY="30.0" prefHeight="504.0" prefWidth="724.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Canvas fx:id="canvas" height="504.0" onMouseDragged="#canvasMouseDragged" onMousePressed="#canvasMouseRPressed" onMouseReleased="#canvasMouseReleased" style="-fx-background-color: #FFFFFF;" width="724.0" />
+         </children>
+      </StackPane>
+      <AnchorPane fx:id="drawPane" layoutY="-1.0" prefHeight="31.0" prefWidth="724.0" style="-fx-background-color: #87CEFA;">
+         <children>
+            <Button fx:id="curveButton" layoutX="14.0" layoutY="1.0" mnemonicParsing="false" onAction="#drawByCurve" onMouseReleased="#curveButtonMouseReleased" prefHeight="31.0" prefWidth="48.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/brush.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="distinguishButton" layoutX="141.0" layoutY="1.0" mnemonicParsing="false" onAction="#distinguish" onMouseReleased="#distinguishButtonMouseReleased" prefHeight="31.0" prefWidth="48.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/distinguish.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="saveButton" layoutX="204.0" layoutY="1.0" mnemonicParsing="false" onAction="#saveFile" prefHeight="31.0" prefWidth="48.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="openButton" layoutX="267.0" layoutY="1.0" mnemonicParsing="false" onAction="#openFile" prefHeight="31.0" prefWidth="48.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/open.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="revokeButton" layoutX="330.0" layoutY="1.0" mnemonicParsing="false" onAction="#revoke" prefHeight="31.0" prefWidth="48.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/revoke.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="clearButton" layoutX="393.0" layoutY="1.0" mnemonicParsing="false" onAction="#clearAll" prefHeight="31.0" prefWidth="48.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/clear.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <ColorPicker fx:id="colorPicker" layoutX="78.0" layoutY="1.0" onAction="#pickColor" prefHeight="31.0" prefWidth="48.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
